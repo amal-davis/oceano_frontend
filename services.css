@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Navbar styles */
+.navbar-brand img {
+    height: 80px; /* Adjust the height of the logo */
+}
+.navbar-toggler {
+    border: none; /* Remove border around the toggle button */
+}
+.navbar-toggler:focus {
+    outline: none; /* Remove outline on focus */
+}
+/* Default styling for nav links */
+.nav-item a {
+    font-weight: bold; /* Make the links bold */
+    color: #000; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for nav links */
+.nav-item a:hover {
+    color: #28a745; /* Change color to green (or your desired color) on hover */
+}
+
+.custom-btn {
+    color: #fff;
+    background-color: #28a745; /* Green button */
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+.custom-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Sliding menu bar */
+@media (max-width: 992px) {
+
+    .button-group {
+        margin-top: 20px; /* Space above buttons */
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+/* Close button only visible on mobile screens */
+.close-btn {
+    display: none; /* Hidden by default */
+}
+
+@media (max-width: 992px) {
+    .close-btn {
+        display: block; /* Show the close button on mobile screens */
+    }
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  .whatsapp-button i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .whatsapp-button:hover {
+    background-color: #20B857;
+    text-decoration: none;
+  }
+
+  .service-section {
+    padding: 60px 0;
+}
+.service-section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.service-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.service-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+.service-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+.btn-learn-more {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-learn-more:hover {
+    background-color: #218838;
+}
+.footer {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer p,
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+  }

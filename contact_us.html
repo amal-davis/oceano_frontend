@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" type="text/css">
+    <link rel="icon" type="image/png" href="fav_icon.png"> <!-- Replace with your favicon file path -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="oceano_new.png" alt="Logo" class="img-fluid"> <!-- Replace with your logo -->
+            </a>
+    
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Centered Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">Contact</a>
+                    </li>
+                </ul>
+    
+                <!-- Right Side Buttons -->
+                <div class="button-group d-flex flex-column flex-lg-row align-items-center">
+                    <a href="tel:+1234567890" class="btn btn-success mb-2 mb-lg-0 me-lg-2">Call: +1 (234) 567-890</a>
+                    <a href="mailto:info@example.com" class="btn btn-success">Email: info@example.com</a>
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+    
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with us
+      </a>
+    
+
+
+
+
+
+
+      <div class="container py-5" style="margin-top: 120px;">
+        <div class="row align-items-center">
+            <!-- Left Image Section -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="contact_images.png" alt="Contact Us" class="img-fluid rounded">
+            </div>
+            <!-- Right Form Section -->
+            <div class="col-lg-6">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form action="" method="post" class="p-4 rounded shadow contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5 mt-5">
+        <div class="row">
+            <!-- Phone Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <div class="card-icon mb-3">
+                        <i class="fas fa-phone fa-2x text-success"></i>
+                    </div>
+                    <h5 class="card-title mb-3">Phone</h5>
+                    <p class="card-text">Feel free to reach us at our phone line for any inquiries.</p>
+                    <p class="fw-bold">+1 123-456-7890</p>
+                </div>
+            </div>
+            <!-- Email Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <div class="card-icon mb-3">
+                        <i class="fas fa-envelope fa-2x text-primary"></i>
+                    </div>
+                    <h5 class="card-title mb-3">Email</h5>
+                    <p class="card-text">For detailed queries, drop us an email. We're happy to help!</p>
+                    <p class="fw-bold">info@example.com</p>
+                </div>
+            </div>
+            <!-- Address Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <div class="card-icon mb-3">
+                        <i class="fas fa-map-marker-alt fa-2x text-danger"></i>
+                    </div>
+                    <h5 class="card-title mb-3">Address</h5>
+                    <p class="card-text">Visit us at our office for a personalized consultation.</p>
+                    <p class="fw-bold">123 Main St, Cityville, USA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Our Location</h2>
+            </div>
+            <div class="col-12">
+                <!-- Google Map Embed -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434508616!2d-122.41941548468125!3d37.77492977975902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f03f5453%3A0x48c0c3f6f8e8eeef!2sGoogle%20LLC!5e0!3m2!1sen!2sus!4v1607532884904!5m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer text-white mt-5 py-5">
+        <div class="container py-5">
+          <div class="row">
+            <!-- Logo Section -->
+            <div class="col-md-3 text-center mb-4 mb-md-0">
+              <img src="oceano_new.png" alt="Logo" class="footer-logo">
+            </div>
+            
+            <!-- Links Section -->
+            <div class="col-md-3 mb-4 mb-md-0">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="about_us.html" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="col-md-3  mb-4 mb-md-0">
+              <h5>Follow Us</h5>
+              <div class="d-flex  gap-3">
+                <a href="#" class="social-icon bg-white text-primary rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon bg-white text-danger rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon bg-white text-success rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Address Section -->
+            <div class="col-md-3">
+              <h5>Address</h5>
+              <p>
+                1234 Ocean Drive, Suite 567<br>
+                Cityville, ST 12345<br>
+                Phone: +1 234 567 890<br>
+                Email: info@oceano.com
+              </p>
+            </div>
+          </div>
+      
+          <!-- Bottom Section -->
+          
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">
+              &copy; 2024 Oceano | Designed and Developed by Softverses
+            </p>
+          </div>
+      </footer>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+</body>
+</html>

@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Navbar styles */
+.navbar-brand img {
+    height: 80px; /* Adjust the height of the logo */
+}
+.navbar-toggler {
+    border: none; /* Remove border around the toggle button */
+}
+.navbar-toggler:focus {
+    outline: none; /* Remove outline on focus */
+}
+/* Default styling for nav links */
+.nav-item a {
+    font-weight: bold; /* Make the links bold */
+    color: #000; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for nav links */
+.nav-item a:hover {
+    color: #28a745; /* Change color to green (or your desired color) on hover */
+}
+
+.custom-btn {
+    color: #fff;
+    background-color: #28a745; /* Green button */
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+.custom-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Sliding menu bar */
+@media (max-width: 992px) {
+
+    .button-group {
+        margin-top: 20px; /* Space above buttons */
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+/* Close button only visible on mobile screens */
+.close-btn {
+    display: none; /* Hidden by default */
+}
+
+@media (max-width: 992px) {
+    .close-btn {
+        display: block; /* Show the close button on mobile screens */
+    }
+}
+
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+/* Left Heading Section */
+.left-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2e7d32; /* Green color for main heading */
+}
+
+.left-content h1 span {
+    color: #76c043; /* Lighter green for highlights */
+}
+
+.left-content p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.badge-section img {
+    /* max-width: 120px; */
+    margin-right: 10px;
+}
+
+/* Right Form Section */
+.form-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select {
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.form-button {
+    background-color: #76c043;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #5a9d34;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+/* Custom Styles */
+.services-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services-section h2 {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.services-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.services-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card-section {
+    padding: 60px 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.card-btn:hover {
+    background-color: #256d27;
+}
+.gradient-section {
+    background: linear-gradient(90deg, #a6ce39, #2e7d32); /* Gradient background */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.gradient-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gradient-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.gradient-section .btn {
+    background-color: white;
+    color: #2e7d32;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+}
+
+.gradient-section .btn:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+  /* Custom styles */
+  .services-section {
+    padding: 60px 20px;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.right-content {
+    text-align: left;
+}
+
+.right-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-quote {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+.btn-quote:hover {
+    background-color: #256d27;
+}
+.step-section {
+    padding: 60px 20px;
+}
+
+.step {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: #2e7d32;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step-content h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.connector {
+    text-align: center;
+}
+
+.connector img {
+    max-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step img {
+        margin-bottom: 20px;
+    }
+}
+.blog-section {
+    padding: 60px 20px;
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.blog-section p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-card .card-body {
+    padding: 20px;
+}
+
+.blog-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.blog-card .date {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+.step-section h2 {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.step-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.step-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.why-choose-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-choose-us h3 {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.why-choose-us p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.icon-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-box .icon {
+    font-size: 40px;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.icon-box h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  .whatsapp-button i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .whatsapp-button:hover {
+    background-color: #20B857;
+    text-decoration: none;
+  }
+  .footer {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer p,
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+  }
+  
